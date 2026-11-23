@@ -5,6 +5,7 @@ import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs'
 import CustomerList from './CustomerList'
 import TrainingList from './TrainingList'
 import Calendar from './Calendar'
+import Statistics from './Statistics'
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
             <Button color="inherit" component={Link} to="/">Customers</Button>
             <Button color="inherit" component={Link} to="/trainings">Trainings</Button>
             <Button color="inherit" component={Link} to="/calendar">Calendar</Button>
+            <Button color="inherit" component={Link} to="/statistics">Statistics</Button>
           </Toolbar>
         </AppBar>
         <Container maxWidth="lg" sx={{ mt: 2 }}>
@@ -23,6 +25,7 @@ function App() {
             <Route path="/" element={<CustomerList />} />
             <Route path="/trainings" element={<TrainingList />} />
             <Route path="/calendar" element={<Calendar />} />
+            <Route path="/statistics" element={<Statistics />} />
           </Routes>
         </Container>
       </BrowserRouter>
