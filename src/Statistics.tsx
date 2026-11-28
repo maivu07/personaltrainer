@@ -22,7 +22,7 @@ function Statistics() {
 
     return (
         <div style={{ padding: '20px' }}>
-            <h2>Statistics — minutes by activity</h2>
+            <h2>Statistics - minutes by activity</h2>
             <ResponsiveContainer width="100%" height={400}>
                 <BarChart data={chartData}>
                     <CartesianGrid strokeDasharray="3 3" />
